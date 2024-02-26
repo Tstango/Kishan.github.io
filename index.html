@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Navigation</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<style>
+/* Basic sty ling */
+
+
+
+header {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #4d9559;
+  border-bottom: 2px solid black;
+  transition: all.55s ease;
+}
+
+.logo, .nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 2.0rem;
+}
+
+.nav-list {
+  display: flex;
+  
+}
+
+.nav-list li {
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+.nav-list li:first-child {
+  margin-left: 0;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  margin-left:500%;
+  
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-list li {
+    margin: 20px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+  }
+  
+}
+
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+  // Your JavaScript code here
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.nav-list').classList.toggle('active');
+  });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('signin').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default action of the link
+        // Your sign-in logic here
+    });
+
+    document.getElementById('signup').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default action of the link
+        // Your sign-up logic here
+    });
+});
+
+
+
+
+</script>
+
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">COC-STATS</a>
+        <div class="menu-toggle">&#9776;</div>
+        <nav>
+          <ul class="nav-list">
+            <div class="home"><li><a href="#">Home</a></li>
+</div>
+<div class="About"><li><a href="#">About</a></li>
+</div>
+            <li><a href="#">Clans</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </nav>
+        <div class="sign">
+  <li><a href="signup.html" class="btn btn-signin">Sign Up</a></li>
+</div>
+<div class="sign-up">
+  <li><a href="login.html" class="btn btn-signup">Login</a></a></li>
+</div>
+</header>
+
+<div class="container">
+  <div class="avatar">
+    <a href="#">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/751678/skytsunami.png" alt="Skytsunami" />
+    </a>
+  </div>
+  <div class="content">
+    <h1>@Kishan Gupta</h1>
+    <p>Follow me on:</p>
+    <p>
+       
+       <a href=<i class="ri-instagram-line"></i></a>
+      <a href=<i class="ri-twitter-line"></i></a>   <a href=`i class="ri-whatsapp-line"></i></a>
+             <a href=<i class="ri-pinterest-line"></i></a>
+
+
+
+       
+    </p>
+    <p>BY: Mario Duarte</p>
+  </div>
+</div>
+ <div class="container">
+
+  <div class="head">
+    <div class="eye left-eye"></div>
+    <div class="eye right-eye"></div>
+  </div>
+
+  <div class="left-upper-wing">
+    <div class="left-lower-wing"></div>
+  </div>
+
+  <div class="right-upper-wing">
+    <div class="right-lower-wing"></div>
+  </div>
+
+</div>
+
+<a class="suppoprt-me" href="#" target="_blank"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a Coffee&nbsp&emoji=&slug=marioduarte&button_colour=FF5F5F&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00"></a>
+
+
+
+
+
+
+
+</body>
+</html>
+     
+      
+      
+      
